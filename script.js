@@ -1,6 +1,6 @@
 function welcome() {
 	alert('Selamat datang di Katalog Produk!');
-	window.location.href='katalog.php';
+	window.location.href='katalog.html';
 }
 
 function diskon() {
