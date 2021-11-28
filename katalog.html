@@ -1,0 +1,306 @@
+<?php 
+$promo = date("d F Y", strtotime("+3 days", time()));
+?>
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="images/logo.jpg">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+    <title>fp.apparel</title>
+    <style>
+        /*Membuat Tulisan Berkedip*/
+        blink {
+          -webkit-animation: 29s linear infinite condemned_blink_effect;
+          animation: 1.5s linear infinite condemned_blink_effect;
+        }
+        @keyframes condemned_blink_effect {
+          0% {
+            visibility: hidden;
+          }
+          50% {
+            visibility: hidden;
+          }
+          100% {
+            visibility: visible;
+          }
+        }
+        th {
+            border-bottom: 1px solid black;
+        }
+        td {
+            padding: 0 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Membuat bagian header untuk membungkus elemen nav dan juga jumbotron -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.php">Beranda</a></li>
+                <li><a href="katalog.php" style="font-size: 25px;">Katalog</a></li>
+                <li><a href="About.php">About</a></li>
+            </ul>
+        </nav>
+        <div class="jumbotron">
+            <center><img src="images/logo.jpg" alt="logo" width="100px" style="border-radius: 50%;"></center>
+            <marquee><p>Promo Up To 67% Pada Tanggal : <?= $promo; ?>!</p></marquee>
+        </div>
+    </header>
+
+    <main>
+         <article class="card">
+            <center><h3>Katalog fp.apparel</h3></center>
+         </article>
+
+         <!-- Membuat 2 bagian, #content dan aside -->
+         <!-- Id content untuk kontent utama -->
+         <!-- aside untuk kontent di bagian samping -->
+        <div id="content">
+           
+
+            <article class="card">
+
+                <!-- Membuat tampilan elemenb menjadi flex atau terurut ke samping -->
+                <div style="display: flex;">
+
+                    <div style="flex-grow: 1;">
+                        <center>
+                            <img src="images/2.jpg" alt="" width="150px">
+                            <h4>MATERNAL X MONSTERSTRESS</h4>
+                            <p><span class="harga">Rp369.000</span></p>
+                            <table>
+                                <tr>
+                                    <th>Size</th>
+                                    <th>H</th>
+                                    <th>W</th>
+                                </tr>
+                                <tr>
+                                    <td><b style="color: green;">S</b></td>
+                                    <td>59</td>
+                                    <td>44</td>
+                                </tr>
+                                <tr>
+                                    <td><b style="color: darkorange;">M</b></td>
+                                    <td>65</td>
+                                    <td>47</td>
+                                </tr>
+                                <tr>
+                                    <td><b style="color: #AF1919;">L</b></td>
+                                    <td>73</td>
+                                    <td>51</td>
+                                </tr>
+                            </table>
+                        </center>
+                    </div>
+                    <div style="flex-grow: 1;">
+                        <center>
+                            <img src="images/1.jpeg" alt="" width="150px">
+                            <h4>GOODBYEEX CREWNECK LIE WHITE</h4>
+                            <p><span class="harga">Rp149.000</span></p>
+                            <table>
+                                <tr>
+                                    <th>Size</th>
+                                    <th>H</th>
+                                    <th>W</th>
+                                </tr>
+                                <tr>
+                                    <td><b style="color: green;">S</b></td>
+                                    <td>66</td>
+                                    <td>47</td>
+                                </tr>
+                                <tr>
+                                    <td><b style="color: darkorange;">M</b></td>
+                                    <td>70</td>
+                                    <td>49</td>
+                                </tr>
+                                <tr>
+                                    <td><b style="color: #AF1919;">L</b></td>
+                                    <td>72</td>
+                                    <td>55</td>
+                                </tr>
+                            </table>
+                        </center>
+                    </div>
+
+                </div>
+
+                <div style="display: flex; padding-top: 100px;">
+
+                    <div style="flex-grow: 1;">
+                        <center>
+                            <img src="images/3.jpg" alt="" width="150px">
+                            <h4>House of Smith Coach Jacket - Corigami</h4>
+                            <p><span class="harga">Rp179.000</span></p>
+                            <table>
+                                <tr>
+                                    <th>Size</th>
+                                    <th>H</th>
+                                    <th>W</th>
+                                </tr>
+                                <tr>
+                                    <td><b style="color: green;">S</b></td>
+                                    <td>59</td>
+                                    <td>44</td>
+                                </tr>
+                                <tr>
+                                    <td><b style="color: darkorange;">M</b></td>
+                                    <td>65</td>
+                                    <td>47</td>
+                                </tr>
+                                <tr>
+                                    <td><b style="color: #AF1919;">L</b></td>
+                                    <td>73</td>
+                                    <td>51</td>
+                                </tr>
+                            </table>
+                        </center>
+                    </div>
+
+                    <div style="flex-grow: 1;">
+                        <center>
+                            <img src="images/4.jpeg" alt="" width="150px">
+                            <h4>Roughneck CJ130 Black Sig R Coach Jacket</h4>
+                            <p><span class="harga">Rp119.000</span></p>
+                            <table>
+                                <tr>
+                                    <th>Size</th>
+                                    <th>H</th>
+                                    <th>W</th>
+                                </tr>
+                                <tr>
+                                    <td><b style="color: green;">S</b></td>
+                                    <td>66</td>
+                                    <td>47</td>
+                                </tr>
+                                <tr>
+                                    <td><b style="color: darkorange;">M</b></td>
+                                    <td>70</td>
+                                    <td>49</td>
+                                </tr>
+                                <tr>
+                                    <td><b style="color: #AF1919;">L</b></td>
+                                    <td>72</td>
+                                    <td>55</td>
+                                </tr>
+                            </table>
+                        </center>
+                    </div>
+
+                </div>
+
+                <div style="display: flex; padding-top: 100px;">
+
+                    <div style="flex-grow: 1;">
+                        <center>
+                            <img src="images/5.jpg" alt="" width="150px">
+                            <h4>Dailyoutfits Kaos Tshirt The Choice</h4>
+                            <p><span class="harga">Rp69.900</span></p>
+                            <table>
+                                <tr>
+                                    <th>Size</th>
+                                    <th>H</th>
+                                    <th>W</th>
+                                </tr>
+                                <tr>
+                                    <td><b style="color: green;">S</b></td>
+                                    <td>59</td>
+                                    <td>44</td>
+                                </tr>
+                                <tr>
+                                    <td><b style="color: darkorange;">M</b></td>
+                                    <td>65</td>
+                                    <td>47</td>
+                                </tr>
+                                <tr>
+                                    <td><b style="color: #AF1919;">L</b></td>
+                                    <td>73</td>
+                                    <td>51</td>
+                                </tr>
+                            </table>
+                        </center>
+                    </div>
+
+                    <div style="flex-grow: 1;">
+                        <center>
+                            <img src="images/6.jpg" alt="" width="150px">
+                            <h4>Heyho - Conspiracy Tshirt Tom And Jerry Black</h4>
+                            <p><span class="harga">Rp44.900</span></p>
+                            <table>
+                                <tr>
+                                    <th>Size</th>
+                                    <th>H</th>
+                                    <th>W</th>
+                                </tr>
+                                <tr>
+                                    <td><b style="color: green;">S</b></td>
+                                    <td>66</td>
+                                    <td>47</td>
+                                </tr>
+                                <tr>
+                                    <td><b style="color: darkorange;">M</b></td>
+                                    <td>70</td>
+                                    <td>49</td>
+                                </tr>
+                                <tr>
+                                    <td><b style="color: #AF1919;">L</b></td>
+                                    <td>72</td>
+                                    <td>55</td>
+                                </tr>
+                            </table>
+                        </center>
+                    </div>
+
+                </div>
+            </article>
+        </div>
+
+        <aside>
+            <!-- Membuat logika jika di klik maka fungsi diskon() di javascript akan terpanggil -->
+            <a href="#" onclick="diskon();" style="text-decoration: none;">
+                <article class="card">
+                    <blink><p class="judul"><b>Klaim Voucher Diskon 75%!</b> <i class="fas fa-angle-left"></i></p></blink>
+                </article>
+            </a>
+
+            <article class="card">
+                <h3 class="judul">Kebijakan Privasi</h3>
+                <p>Adanya Kebijakan Privasi ini adalah komitmen nyata dari toko kami untuk menghargai dan melindungi setiap informasi pribadi pengguna situs ini. Kebijakan ini menjadi acuan yang mengatur dan melindungi penggunaan data dan informasi penting para pengguna situs toko online ini, yang telah dikumpulkan pada saat mendaftar, mengakses dan menggunakan layanan disini, seperti alamat e-mail, nomor telepon, foto, gambar, dan lain-lain.</p>
+            </article>
+
+            <article class="card">
+                <h3 class="judul">Informasi Pembelian</h3>
+                <center>
+                    <a href="https://wa.me/62895341255595" target="blank" style="color: green;font-weight: bold;"> <img style="width: 28% ;  margin: 0 38%; " src="images/whatsapp.png" alt="">
+                    <blink>+62 895-3412-55595</blink>            
+                    </a>
+                    <a href="http://instagram.com/halohathrift_" target="blank" style="color: green;font-weight: bold;"> <img style="width: 17% ;  margin: 4% 43%; " src="images/instagram.png" alt="">
+                    <blink>fp.apparel</blink>            
+                    </a>
+                </center>
+            </article>
+            <article class="card">
+                <h3 class="judul">Coustumer Service</h3>
+                <center>
+                    <a href="https://www.gmail.com/" target="blank" style="color: green;font-weight: bold;"> <img style="width: 20%; margin: 0 38%; " src="images/gmail.png" alt="">
+                    <blink>fp_apparel@gmail.com</blink>            
+                    </a>
+                </center>
+            </article>
+        </aside>
+
+       
+    </main>
+
+    <footer>
+        <p>&#169 fp.apparel 2021</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
